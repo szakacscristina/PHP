@@ -1,0 +1,28 @@
+<?php
+ //verifica daca exista variabila Post cu datele din textfield
+echo date('Y-m-d');
+
+if (isset($_POST['submit'])) //verifica daca exista variabila Post cu datele din textfield
+{
+    echo "<br>";
+  echo "BEFORE";
+  echo "<br>";
+  $user = $_POST ["uname"];
+    echo "<br>";
+  $passwd = $_POST ["psw"];
+  echo "<br>";
+  echo $user;
+    echo "<br>";
+  echo $passwd;
+    echo "<br>";
+  $var = htmlentities($user);
+    echo "<br>";
+  $var1 = htmlentities($passwd);
+  echo "<br>";
+ echo "AFTER";
+   echo "<br>";
+echo $var;
+  echo "<br>";
+echo $var1;
+}
+?>
